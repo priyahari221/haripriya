@@ -1,0 +1,632 @@
+body {
+  background: linear-gradient(270deg, #e8f2cf, #d1e7b9, #c3ddae, #aacd97);
+  background-size: 240% 240%;
+  animation: gradient-animation-body 36s ease infinite;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+@keyframes gradient-animation-body {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+nav {
+  
+  background: linear-gradient(250deg, #140e70, #4a440e, #0a8617);
+  background-size: 180% 180%;
+  animation: gradient-animation 12s ease infinite;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.profile-picture-box {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 200px; /* Adjust as needed */
+  width: 70px; /* Adjust as needed */
+  height: 75px; /* Adjust as needed */
+  overflow: hidden;
+  border: 2px solid rgba(255, 255, 255, .5);
+}
+
+.profile-picture-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.title1 {
+  font-size: 30px;
+}
+
+.imgBlock {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.imgBlock>div {
+  min-width: 300px;
+
+}
+
+.imgBlock>div img {
+  object-fit: cover;
+  transition: all 0.3s;
+  width: 100%;
+  height: 80%;
+
+}
+
+.imgBlock>div:hover img {
+  /* object-fit: contain; */
+  transform: scale(1.05);
+  /* border-radius: 18px; */
+}
+
+.block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+/* 
+.block>div {
+  width: 80px;
+} */
+
+.block>div img {
+  object-fit: cover;
+  transition: all 0.3s;
+  width: 100%;
+  height: 80%;
+}
+
+.block>div:hover img {
+  /* object-fit: cosntain; */
+  transform: scale(1.05);
+  /* border-radius: 18px; */
+}
+
+.heading {
+  display: inline-block;
+  position: relative;
+  color: #04640e;
+  margin: 0;
+  margin-top: 70px;
+  margin-bottom: 40px;
+  padding-left: 20px;
+  cursor: default;
+  font-size: larger;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.add-button{
+  margin-top: 70px;
+  margin-bottom: 40px;
+}
+
+.heading:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 11px;
+  background-color: black;
+  transform-origin: bottom;
+  transition: transform 0.25s ease-out;
+  background-color: #04640e;
+  ;
+}
+
+.heading:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom;
+}
+
+form {
+  max-width: 100%;
+  margin: auto;
+}
+
+form input[type=text] {
+  color: #04640e;
+  width: 95%;
+  padding: 10px;
+  font-size: medium;
+  border: 2px solid #04640e;
+  border-radius: 20px;
+  background-color: transparent;
+}
+
+ form textarea {
+  color: #04640e;
+  max-width: 95%;
+  padding: 10px;
+  font-size: large;
+  resize: none;
+  border: 2px solid #04640e;
+  border-radius: 20px;
+  background-color: transparent;
+} 
+#logo-container1 {
+  width: 55px !important;
+  height: auto !important;
+  position: relative;
+}
+
+
+form label {
+  color: #04640e;
+  font-size: x-large;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+form input[type=text]::placeholder {
+  font-size: medium;
+  color: #04640e;
+  opacity: 0.70;
+}
+
+form textarea::placeholder {
+  color: #04640e;
+  font-size: large;
+  opacity: 0.70;
+}
+
+.logo-container {
+  width: 140px !important;
+  height: auto !important;
+  position: relative;
+}
+
+.logo-container img {
+  filter: brightness(200);
+}
+
+
+.title {
+  font-size: 1.5rem;
+  text-align: center;
+  flex-grow: 1;
+  margin: 0;
+}
+
+.add-button {
+  position: relative;
+  width: 90px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid #04640e;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1em;
+  color: #04640e;
+  font-weight: 500;
+  margin-left: 40px;
+  background: transparent;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+
+.add-button:hover {
+  border-color: #162938;
+  color: white;
+}
+
+.add-button::before {
+  content: "";
+  position: absolute;
+  border-radius: 4px;
+  top: 0;
+  left: -102%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, transparent 50%, #04640e 50%);
+  transition: left 0.3s;
+  z-index: -1;
+}
+
+.add-button:hover::before {
+  left: 0;
+}
+
+.add-button::after {
+  content: "";
+  position: absolute;
+  border-radius: 4px;
+  top: 0;
+  left: 102%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #04640e 50%, transparent 50%);
+  transition: left 0.3s;
+  z-index: -1;
+}
+
+.add-button:hover::after {
+  left: 0;
+}
+
+.overlay-btn {
+  width: 100%;
+  height: 25px;
+  background: #162938;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 5px;
+  margin-right: 10px;
+}
+
+.logout-btn {
+  width: 90px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid yellowgreen;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1em;
+  color: white;
+  font-weight: 500;
+  margin-left: 40px;
+  transition: .5s;
+  background: linear-gradient(to right, yellowgreen 50%, transparent 50%) right;
+  background-size: 220%;
+}
+
+.logout-btn:hover {
+  background-position: left;
+  color: rgb(0, 0, 72);
+}
+
+.headingBlock {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Or justify-content: space-around; */
+  /* position: relative; */
+  /* Ensure the container is a positioned parent for absolute positioning */
+
+}
+
+.last-row-container {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  /* Prevents wrapping of the items */
+  position: relative;
+  /* Make the container a positioned parent for absolute positioning */
+}
+
+.box {
+  position: relative;
+  flex: 0 0 calc(25% - 70px) !important;
+  width: calc(25% - 200px) !important;
+  /* 25% width for 4 boxes in a row, subtracting margin */
+  height: 250px;
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+
+  border: 2px solid rgba(255, 255, 255, .5);
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+}
+
+/* CSS for like icon and count */
+.like-container {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.like-icon {
+  margin-right: 5px;
+  color:green; /* Fill the like icon with blue color */
+  cursor: pointer;
+  /* margin-top: -60px; Adjust this value to move the icon and count upwards */
+}
+
+.like-count {
+  font-weight: bold;
+  /* margin-top: -60px; Adjust this value to move the icon and count upwards */
+}
+
+.postName{
+  position: absolute;
+  width: calc(100% - 20px);
+}
+
+/* CSS for followers icon and count */
+.followers-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Align to the right */
+  margin-top: 15px;
+}
+
+.followers-icon {
+  margin-right: 5px;
+  color:green; /* Fill the followers icon with green color */
+  cursor: pointer;
+  /* margin-top: -60px; Adjust this value to move the icon and count upwards */
+}
+
+.followers-count {
+  font-weight: bold;
+  /* margin-top: -60px; Adjust this value to move the icon and count upwards */
+}
+
+
+@media only screen and (max-width: 480px) {
+  .like-container,
+  .followers-container {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .like-icon,
+  .followers-icon,
+  .like-count,
+  .followers-count {
+    margin-right: 0; /* Remove margin on smaller screens */
+    margin-top: 0; /* Reset margin top */
+  }}
+#popup-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+#popup-content p {
+  color: #04640e;
+  font-weight: bold;
+  width: 80%;
+  overflow-wrap: break-word;
+  align-self: center;
+  margin: auto;
+}
+
+.button-container {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  margin-top: 30px;
+}
+
+.delete {
+  margin-left: 10px;
+}
+
+.button {
+  margin-left: 5px;
+}
+
+
+@media screen and (max-width: 600px) {
+  .box {
+    width: 100%;
+  }
+
+  .add-button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+/* Popup styles */
+.popup {
+  display: none;
+  position: fixed;
+
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, .5);
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  padding: 20px;
+  width: 80vw;
+  height: 80vh;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.popup img {
+  object-fit: contain;
+  height: 90%;
+  width: 90%;
+  margin-top: 10px;
+  /* max-width: 80%;
+  max-height: 60vh;
+  height: auto; */
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Semi-transparent black background */
+  background: rgba(255, 255, 255, 0.8);
+  z-index: 999;
+  /* Ensure the overlay is below the popup */
+}
+
+.close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45px;
+  height: 45px;
+  background: #162938;
+  font-size: 2em;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loadButton {
+  padding: 10px 20px;
+  margin: auto;
+  background-color: #04640e;
+  font-weight:normal;
+  font-size: medium;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.loadButton:hover {
+  background-color: #067711;
+}
+
+.loader {
+  display: none;
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-top: 4px solid #04640e;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  animation: spin 1s linear infinite;
+  margin-left: 10px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loading {
+  background-color: #ccc;
+  pointer-events: none;
+}
+
+.logout-button {
+  margin-bottom: -28px;
+}
+
+a {
+  color: #04640e;
+  text-decoration-line: none;
+}
+
+#user-info {
+  color: #cccccc;
+  margin-bottom: 20px;
+}
+
+footer {
+  padding: 10px 20px;
+  text-align: center;
+  color: #04640e;
+}
+
+#my {
+  /* Set the container to flex and allow vertical overflow */
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  max-height: 500px; /* Set a maximum height to enable scrolling */
+}
+
+.box {
+  /* Ensure each box is displayed in a row */
+  flex: 0 0 25%; /* Set each box to occupy 25% of the container width */
+  /* Optionally, set a minimum height for each box */
+  min-height: 100px;
+}
+
+.no-posts-message {
+  /* Define your styles here */
+  font-size: 35px;
+  font-weight: bold;
+  color: green /* Example color */
+  /* Add any other styles as needed */
+}
+

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link rel="stylesheet" href="logins.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">   
+    <title>SMS</title>
+</head>
+<body>
+   <header>
+        <!-- <h2 class="logo">Logo</h2> -->
+        <!-- <div class="logo-container"> -->
+            <img id="logo-container" src="images/Screenshot of log.png" alt="Logo">
+        <!-- </div> -->
+        <nav class="navigation">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Service</a>
+            <a href="#">Contact</a>
+            <button class="btnLogin-popup">Login</button>
+            
+        </nav>
+    </header>
+
+    
+
+    <div class="wrapper">
+        <span class="icon-close">
+            <i class="bi bi-x"></i> 
+        </span>
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form id="form" >
+                <div class="input-box">
+                    <span class="icon"></span>
+                    <i class="bi bi-person-fill"></i>
+                    <label for="username">Username</label>
+                    <input type="text" id="username" >
+                    
+                    
+                </div>
+                <div class="input-box">
+                    <span class="icon"></span>
+                    <i class="bi bi-lock-fill"></i>
+                    <label for ="password">Password</label>
+                    <input type="password" id="password" >
+                    <span class="toggle-password" onclick="togglePasswordVisibility()">Show</span>
+                </div>
+                <div class="remember-forgot">
+                    <label ><input type="checkbox">
+                        Remember me
+                    </label>
+                    <a href="#">Forgot Password</a>
+                </div>
+                <button type="submit" id="loginBtn" class="btn" >Login</button>
+                <div class="Login-register">
+                    <p>Dont have an account?
+                    <a href="#" class="register-link">Register </a></p>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+ 
+  <script src="logins.js"></script>
+</body>
+</html>
+ 
+
+
+
